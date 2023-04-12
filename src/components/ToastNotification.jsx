@@ -1,20 +1,4 @@
-import { useState, useEffect } from "react";
-
 const ToastNotification = ({ messageType }) => {
-
-  const [showToast, setShowToast] = useState(false);
-
-  useEffect(() => {
-    if (showToast) {
-      setTimeout(() => {
-        setShowToast(false);
-      }, 3000); // Toast notification will be hidden after 3 seconds
-    }
-  }, [showToast]);
-
-  const handleDismiss = () => {
-    setShowToast(false);
-  };
 
   return (
     <div className="absolute left-3/4">

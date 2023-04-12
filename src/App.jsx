@@ -13,6 +13,9 @@ function App() {
   const triggerToast = (type) => {
     setShowToast(true);
     setMessageType(type);
+    setTimeout(()=>{
+      setShowToast(false);
+    }, 3000);
   };
 
   const addTodo = () => {
