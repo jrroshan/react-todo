@@ -2,9 +2,9 @@ const TodoList = ({ list, remove }) => {
   return (
     <div className="my-5">
       {list?.length > 0 ? (
-        <ul className="flex items-center justify-center">
+        <ul className="flex items-center justify-center flex-col">
           {list.map((entry, index) => (
-            <div className="bg-blue-200 py-1 rounded-full w-6/12 flex items-center justify-between px-5">
+            <div className="mt-2 bg-blue-200 py-1 rounded-full w-6/12 flex items-center justify-between px-5">
               <div>
                 <div className="font-bold inline">{index} : </div>
                 <li key={index} className="inline">
