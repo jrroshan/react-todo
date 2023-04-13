@@ -21,7 +21,7 @@ const ToastNotification = ({ messageType }) => {
             <span className="sr-only">Check icon</span>
           </div>
           <div className="ml-3 text-sm font-normal">
-            Item moved successfully.
+            Item Added successfully.
           </div>
           <button
             type="button"
