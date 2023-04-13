@@ -2,18 +2,18 @@ const TodoInput = ({ todo, setTodo, addTodo }) => {
   return (
     <div>
       <input
-        className="bg-yellow-300 rounded-full px-2 inline"
+        className="bg-white py-2 rounded px-2 inline"
         type="text"
         name="todo"
         value={todo}
-        placeholder="Create a new Todo"
+        placeholder="Enter Task"
         onChange={(e) => {
           setTodo(e.target.value);
         }}
       />
       <button
         onClick={addTodo}
-        className="ml-5 bg-green-700 rounded px-5 rounded-full"
+        className="ml-5 bg-blue-800 rounded px-5 rounded py-2"
       >
         Add
       </button>

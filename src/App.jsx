@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="App w-4/5 mx-auto text-center">
       {showToast && <ToastNotification messageType={messageType} />}
-      <h1 className="my-5">React Todo App</h1>
+      <h1 className="my-5 text-white font-semibold">React Todo App</h1>
       <TodoInput todo={todo} setTodo={setTodo} addTodo={addTodo} />
       <TodoList list={todos} remove={deleteTodo} />
     </div>
